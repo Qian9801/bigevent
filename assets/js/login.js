@@ -59,7 +59,7 @@ $(function(){
                   data,
                   success:function(res){
                     //   console.log(res);
-                      localStorage.setItem("data",res.token);
+                      localStorage.setItem("token",res.token);
                       if(res.status == 1){
                           return layer.msg(res.message);
                       }
