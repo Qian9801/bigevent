@@ -16,7 +16,7 @@ function getUserInfo() {
         url:"/my/userinfo",
         
         success:function (res) {
-            console.log(res);
+            // console.log(res);
 if(res.status === 1){
     location.href = "/home/login.html"
     return layer.msg("用户信息失效");
@@ -32,7 +32,7 @@ function renderUserInfo(data) {
     //名字优先级
     let name = data.nickname || data.username;
     let first = name[0].toUpperCase();
-    console.log(name,first);
+    // console.log(name,first);
     $('#welcome').text("欢迎 " + name);
     //头像的处理
     if(data.user_pic){
